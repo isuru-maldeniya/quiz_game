@@ -9,6 +9,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -44,6 +45,7 @@ public class firstQuestionPain extends AppCompatActivity {
         b=(Button) findViewById(R.id.buttonB);
         c=(Button) findViewById(R.id.buttonC);
         d=(Button) findViewById(R.id.buttonD);
+        timePlane=(TextView) findViewById(R.id.countView);
         textView.setText((pos+1)+"."+bank[pos].getQuestion());
         a.setText("A. "+bank[pos].getA());
         b.setText("B. "+bank[pos].getB());
@@ -61,18 +63,19 @@ public class firstQuestionPain extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 pos++;
-                if(pos<15){
+                if(pos<15) {
                     mark++;
-                    textView.setText((pos+1)+". "+bank[pos].getQuestion());
-                    a.setText("A. "+bank[pos].getA());
-                    b.setText("B. "+bank[pos].getB());
-                    c.setText("C. "+bank[pos].getC());
-                    d.setText("D. "+bank[pos].getD());
+                    textView.setText((pos + 1) + ". " + bank[pos].getQuestion());
+                    a.setText("A. " + bank[pos].getA());
+                    b.setText("B. " + bank[pos].getB());
+                    c.setText("C. " + bank[pos].getC());
+                    d.setText("D. " + bank[pos].getD());
                     startTimer();
                     dialog.dismiss();
-
+                }else if(pos==15){
+                    mark++;
                 }else{
-                    //conclution code
+                    Log.d("appQuize", "marks"+mark);
                 }
             }
         });
@@ -98,7 +101,7 @@ public class firstQuestionPain extends AppCompatActivity {
                     dialog.dismiss();
 
                 }else{
-                    //conclution code
+                    Log.d("appQuize", "marks"+mark);
                 }
             }
         });
@@ -169,8 +172,9 @@ public class firstQuestionPain extends AppCompatActivity {
             @Override
             public void onTick(long l) {
                 timelefttomiliseconds=l;
-                int sec=(int)timelefttomiliseconds%60000/1000;
+                int sec=(int)timelefttomiliseconds%60000/1000+1;
                 String s=sec+"";
+                timePlane.setText(s);
             }
 
             @Override
