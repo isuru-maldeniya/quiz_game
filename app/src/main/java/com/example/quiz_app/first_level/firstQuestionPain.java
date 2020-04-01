@@ -8,6 +8,7 @@ import android.app.Dialog;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -23,6 +24,9 @@ public class firstQuestionPain extends AppCompatActivity {
     Button rightNext;
     Button wrongNext ,a,b,c,d;
     int mark;
+    private CountDownTimer downTimer;
+    TextView timePlane;
+    private long timelefttomiliseconds=15000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,9 +50,11 @@ public class firstQuestionPain extends AppCompatActivity {
         c.setText("C. "+bank[pos].getC());
         d.setText("D. "+bank[pos].getD());
         dialog=new Dialog(this);
+        startTimer();
     }
 
     public void rightButtonProcess(){
+        downTimer.cancel();
         dialog.setContentView(R.layout.wright_alert_popup);
         rightNext=dialog.findViewById(R.id.rightNext);
         rightNext.setOnClickListener(new View.OnClickListener() {
@@ -62,6 +68,7 @@ public class firstQuestionPain extends AppCompatActivity {
                     b.setText("B. "+bank[pos].getB());
                     c.setText("C. "+bank[pos].getC());
                     d.setText("D. "+bank[pos].getD());
+                    startTimer();
                     dialog.dismiss();
 
                 }else{
@@ -74,6 +81,7 @@ public class firstQuestionPain extends AppCompatActivity {
     }
 
     public void wrongButtonProcess(){
+        downTimer.cancel();
         dialog.setContentView(R.layout.wrong_alert_popup);
         wrongNext=dialog.findViewById(R.id.wrongNext);
         wrongNext.setOnClickListener(new View.OnClickListener() {
@@ -86,6 +94,7 @@ public class firstQuestionPain extends AppCompatActivity {
                     b.setText("B. "+bank[pos].getB());
                     c.setText("C. "+bank[pos].getC());
                     d.setText("D. "+bank[pos].getD());
+                    startTimer();
                     dialog.dismiss();
 
                 }else{
@@ -153,4 +162,21 @@ public class firstQuestionPain extends AppCompatActivity {
             new QuestionModel("This country always needs food. What is this?","Ethiopia","India","Hungary","Kenya","c"),
             new QuestionModel("What travels around the world but stays in one spot?","Stamp","Plane","Money","Ship","a"),
     };
+
+    public void startTimer(){
+        timelefttomiliseconds=15000;
+        downTimer=new CountDownTimer(timelefttomiliseconds,1000) {
+            @Override
+            public void onTick(long l) {
+                timelefttomiliseconds=l;
+                int sec=(int)timelefttomiliseconds%60000/1000;
+                String s=sec+"";
+            }
+
+            @Override
+            public void onFinish() {
+                wrongButtonProcess();
+            }
+        }.start();
+    }
 }
