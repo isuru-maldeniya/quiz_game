@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".first_level.frontDash"></activity>
+        <activity android:name=".first_level.firstQuestionPain"></activity>
+        <activity android:name=".first_level.frontDash" />
         <activity android:name=".front_part.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -3,4 +3,125 @@
     <string name="SLTravrse">Powered by SL Traverse</string>
     <string name="nextButton">Let\'s go in</string>
     <string name="exitButton">Exit</string>
+
+    <string name="question_0">Drink milk. Night rider. Hide in whole day. Who am I?</string>
+    <string name="question_1">I have a rhythem. I can flow. I havn\'t any colour. I am made by man. What am I?</string>
+    <string name="question_2">You can see throught me. I am good to drink. People swim in me. What am I?</string>
+    <string name="question_3">My eyes are still open when I go to sleep but I can\'t see. Who am I?</string>
+    <string name="question_4">I have four legs but I am creeping. I am not sweating but my tail pointed. Who am I?</string>
+    <string name="question_5">You can see it everyday. You dream to touch it but you can\'t. What is this?</string>
+    <string name="question_6">I am not a living being but i grow, I don\'t have a nose but I want air. Water is my biggest enemy. What am I?</string>
+    <string name="question_7">This is uncountable. Solid. This is made by juice of some trees. Some time used as food flavour. What is this?</string>
+    <string name="question_8">I was young, I was tall but as I get older I get shorter. Who am I?</string>
+    <string name="question_9">When I was broken,it is very useful. What is this?</string>
+    <string name="question_10">This is only going up. There is no downside. What is this?</string>
+    <string name="question_11">What is the oldest of these trees?</string>
+    <string name="question_12">Which social media does a bird use as its mark?</string>
+    <string name="question_13">This country always needs food. What is this?</string>
+    <string name="question_14">What travels around the world but stays in one spot?</string>
+
+    <string-array name="q_0">
+        <item>Cat</item>
+        <item>Cat</item>
+        <item>Rat</item>
+        <item>Rabbit</item>
+    </string-array>
+
+    <string-array name="q_1">
+        <item>Rain</item>
+        <item>Wind</item>
+        <item>River</item>
+        <item>Song</item>
+    </string-array>
+
+    <string-array name="q_2">
+        <item>Wodka</item>
+        <item>Money</item>
+        <item>Water</item>
+        <item>Honey</item>
+    </string-array>
+
+    <string-array name="q_3">
+        <item>Gold fish</item>
+        <item>Snake</item>
+        <item>Parrot</item>
+        <item>Bear</item>
+    </string-array>
+
+    <string-array name="q_4">
+        <item>Chameleon</item>
+        <item>Crocadile</item>
+        <item>Iguana</item>
+        <item>Moniter</item>
+    </string-array>
+
+    <string-array name="q_5">
+        <item>Wind</item>
+        <item>Sky</item>
+        <item>Sea</item>
+        <item>Rainbow</item>
+    </string-array>
+
+    <string-array name="q_6">
+        <item>Ice</item>
+        <item>Tree</item>
+        <item>Fire</item>
+        <item>Baloon</item>
+    </string-array>
+
+    <string-array name="q_7">
+        <item>Honey</item>
+        <item>Suger</item>
+        <item>Sand</item>
+        <item>Jam</item>
+    </string-array>
+
+    <string-array name="q_8">
+        <item>Pen</item>
+        <item>River</item>
+        <item>Coconut tree</item>
+        <item>Pencil</item>
+    </string-array>
+
+    <string-array name="q_9">
+        <item>Egg</item>
+        <item>Mind</item>
+        <item>Bone</item>
+        <item>Glass</item>
+    </string-array>
+
+    <string-array name="q_10">
+        <item>Population</item>
+        <item>Oil price</item>
+        <item>Age</item>
+        <item>US Doller</item>
+    </string-array>
+
+    <string-array name="q_11">
+        <item>Oak tree</item>
+        <item>Mango tree</item>
+        <item>Cocoa tree</item>
+        <item>Elder tree</item>
+    </string-array>
+
+    <string-array name="q_12">
+        <item>Facebook</item>
+        <item>Twitter</item>
+        <item>VK</item>
+        <item>Reddit</item>
+    </string-array>
+
+    <string-array name="q_13">
+        <item>Ethiopia</item>
+        <item>India</item>
+        <item>Hungary</item>
+        <item>Kenya</item>
+    </string-array>
+
+    <string-array name="q_14">
+        <item>Stamp</item>
+        <item>Plane</item>
+        <item>Money</item>
+        <item>Ship</item>
+    </string-array>
 </resources>
