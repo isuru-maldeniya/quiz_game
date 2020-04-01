@@ -19,6 +19,7 @@
 
         <Button
             android:id="@+id/buttonA"
+            android:onClick="clickA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="90dp"
@@ -36,6 +37,7 @@
 
         <Button
             android:id="@+id/buttonB"
+            android:onClick="clickB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -53,6 +55,7 @@
 
         <Button
             android:id="@+id/buttonC"
+            android:onClick="clickC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="90dp"
@@ -70,6 +73,7 @@
 
         <Button
             android:id="@+id/buttonD"
+            android:onClick="clickD"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -88,15 +92,22 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="366dp"
-        android:layout_height="244dp"
+        android:id="@+id/level1Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="31dp"
         android:layout_marginBottom="268dp"
-        android:text="TextView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="maldeniya"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorAccent1"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
